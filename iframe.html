@@ -14,27 +14,48 @@
    body {
     margin:0;
    }
-   div#welcome-banner {
+   div#pon-welcome-banner {
     width:100%;
     text-align:center;
     position:fixed;
     top:0;
     margin:0;
-    height:28px;
-    padding:4px;
-    background: #20b24b;
-    color:#fff;
+    height:34px;
+    padding:8px 0 0 0;
+    background: #fff;
+    color:#444;
     font-family: 'Open Sans', Sans;
-    font-size:16pt;
-    border-bottom: 2px solid #444;
+    font-size:15pt;
+    border-bottom: 8px solid #20b24b;
    }
-   div#welcome-banner a {
+   div#pon-welcome-banner a {
     color: #F18F2B;
+   }
+   div#pon-welcome-banner a#pon-button {
+    text-decoration:none;
+    font-size: 10pt;
+    background: none repeat scroll 0 0 #CA2470;
+    color: #fff;
+    padding: 4px 6px;
+    margin: 0 0 2px 4px;
+    border:0;
+   }
+   iframe#pon-iframe {
+    border: 0;
+    position:fixed;
+    top:50px;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
    }
   </style>
  </head>
  <body>
-  <div id="welcome-banner">Hi, welcome to the <a href="https://peoplesopen.net/">People's Open Network</a>. Please <a href="https://peoplesopen.net/donate/">donate</a>! <input name="action" type="button" value="Dismiss"></div>
-  <iframe src="http://ddg.gg" style="border: 0; position:fixed; top:38px; left:0; right:0; bottom:0; width:100%; height:100%">
+  <div id="pon-welcome-banner">
+   You're using the <a href="https://peoplesopen.net/">People's Open Network</a>. Please <a href="https://peoplesopen.net/donate/">donate</a>! <a href="http://ddg.gg/" id="pon-button"><strong>Dismiss</strong></a>
+  </div>
+  <iframe src="http://ddg.gg" id="pon-iframe">
  </body>
 </html>
